@@ -115,7 +115,7 @@ export default function IntegrationBuilderPage({ files }: { files: Record<string
 
   useEffect(() => {
     // Update selected file when either integration changed
-    setSelectedFilename(integration.steps[0].pointer.filename);
+    setSelectedFilename(integration.filenames[0]);
     setHighlight(0, integration);
     // Clear copied
     if (isLinkCopied) {
